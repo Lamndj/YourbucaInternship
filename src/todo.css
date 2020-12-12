@@ -1,0 +1,127 @@
+.todos {
+}
+
+.todos__heading {
+  font-size: 40px;
+  font-weight: normal;
+  color: #208ce7;
+  margin: 40px 0;
+}
+
+.todos__newSection {
+  margin: 0 auto 40px auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s linear;
+}
+
+.todos__newSection input {
+  outline: none;
+  padding: 10px;
+  width: 70%;
+  transition: all 0.3s linear;
+}
+
+.todos__newSection button {
+  background-color: #208ce7;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.todos__list {
+  width: 50%;
+  margin: 0 auto;
+  transition: all 0.3s linear;
+}
+
+.todos__notodo {
+  border: 1px solid #cfcfcf;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.todos__single {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #cfcfcf;
+  /* width: 50%; */
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.todos__single h4 {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+  max-width: 50%;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.todos__single input {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+  max-width: 50%;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.todos__single button {
+  background-color: #208ce7;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+#deleteBtn {
+  background-color: #e94644;
+}
+
+@media screen and (max-width: 750px) {
+  .todos__newSection input {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .todos__newSection {
+    width: 80%;
+  }
+  .todos__list {
+    width: 80%;
+  }
+  .todos__single {
+    flex-direction: column;
+    padding: 20px 0 0 0;
+  }
+  .todos__single h4,
+  .todos__single input {
+    width: 90%;
+    max-width: 90%;
+  }
+  .todos__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+  }
+
+  .todos__buttons button {
+    width: 50%;
+    margin: 0;
+  }
+}
